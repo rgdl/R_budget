@@ -1,5 +1,6 @@
 TO DO
 
+- Create a README
 - Make the spinning icon only spin when there are uncategorised transactions (any in the file, or any in the current display?)
 - Make a fancy interactive process for categorising new transactions
 - Good way of merging in new transaction records
