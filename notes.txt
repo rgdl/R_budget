@@ -1,0 +1,11 @@
+TO DO
+
+- Make the spinning icon only spin when there are uncategorised transactions (any in the file, or any in the current display?)
+- Make a fancy interactive process for categorising new transactions
+- Good way of merging in new transaction records
+- Maybe separate catlevel and proportot for the 2 plots
+- Look for ways to save some space in the options section at the bottom
+- Only give descs/cats as options if they're in the current date range
+- In temporal plot, can more of the catlevel-dependent code be modified to use 'description' vs. 'categorisation' as a string, to reduce duplication?
+- Options should be alphabetised in the drop-down menus
+- Is there an easy way of making a select all/deselect all for the drop-downs?
