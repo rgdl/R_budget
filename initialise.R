@@ -1,3 +1,4 @@
+rm(list = ls())
 appname <- "Robert's Budget"
 library(tidyverse)
 library(magrittr)
@@ -37,8 +38,10 @@ credits <- dat %>%
 quant95 <- quantile(debits$debit, 0.95) %>% as.numeric()
 quant99 <- quantile(debits$debit, 0.99) %>% as.numeric()
 daterange <- range(debits$date)
+alldescs <- unique(debits$description)
+allcats <- unique(debits$category)
 
-max_nplots <- min(N_PLOT_MAX, max(max_ndesc, length(allcats)))
+max_nplots <- min(N_PLOT_MAX, max(length(alldescs), length(allcats)))
 
 # Truncate long descriptions/category names
 clean_field <- function(x) {
